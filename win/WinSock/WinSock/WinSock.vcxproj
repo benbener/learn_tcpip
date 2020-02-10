@@ -14,7 +14,7 @@
     <ClInclude Include="error_handling.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="hello_server_win.c" />
+    <ClCompile Include="hello_client_win.c" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{C0A4559B-646C-48A7-B3E3-2144D475B5EC}</ProjectGuid>

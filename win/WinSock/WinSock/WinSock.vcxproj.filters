@@ -20,7 +20,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="hello_server_win.c">
+    <ClCompile Include="hello_client_win.c">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
