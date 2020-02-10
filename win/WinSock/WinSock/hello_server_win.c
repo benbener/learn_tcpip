@@ -20,12 +20,12 @@ int main(int argc,char *argv[])
 	if(WSAStartup(MAKEWORD(2,2),&wsaData) != 0)
 		ErrorHanding("WSAStartup() error!");
 
-	hServSock = socket(AF_INET,SOCK_STREAM,0);
+	hServSock = socket(PF_INET,SOCK_STREAM,0);
 	if(hServSock == INVALID_SOCKET)
 		ErrorHanding("socket() error!");
 
 	memset(&servAddr,0,sizeof(servAddr));
-	servAddr.sin_family = PF_INET;
+	servAddr.sin_family = AF_INET;
 	servAddr.sin_addr.s_addr = htonl(INADDR_ANY);
 	servAddr.sin_port = htons(atoi(argv[1]));
 
